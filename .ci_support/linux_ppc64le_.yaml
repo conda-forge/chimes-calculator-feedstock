@@ -1,0 +1,21 @@
+cdt_name:
+- cos7
+channel_sources:
+- conda-forge
+channel_targets:
+- conda-forge main
+cxx_compiler:
+- gxx
+cxx_compiler_version:
+- '9'
+docker_image:
+- quay.io/condaforge/linux-anvil-ppc64le
+fortran_compiler:
+- gfortran
+fortran_compiler_version:
+- '9'
+target_platform:
+- linux-ppc64le
+zip_keys:
+- - cxx_compiler_version
+  - fortran_compiler_version
