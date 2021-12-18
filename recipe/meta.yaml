@@ -1,5 +1,5 @@
 {% set name = "chimes-calculator" %}
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/rk-lindsey/chimes_calculator/archive/refs/tags/v{{ version }}.zip
-  sha256: 367e84bcca6cf9901198d031fef3ccaea0e9fdd1600d58566c73fc9ec729dcae
+  sha256: 93253676362c71485220d2c69952caf48d0b07dcdec83528ec61cc0d0ccc1a91
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
 
 requirements:
@@ -30,7 +30,7 @@ about:
   license: LGPL-3.0-only
   license_family: LGPL
   license_file: LICENSE
-  summary: 'Chebyshev Interaction Model for Efficient Simulation'
+  summary: Chebyshev Interaction Model for Efficient Simulation
   description: |
     The Chebyshev Interaction Model for Efficient Simulation (ChIMES) is a
     machine-learned interatomic potential that can target chemical reactivity.
