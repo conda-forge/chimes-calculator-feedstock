@@ -27,5 +27,5 @@ ninja all
 ./test_chimescalc \
   ../serial_interface/tests/force_fields/test_params.CHON.txt \
   ../serial_interface/tests/configurations/CHON.testfile.000.xyz \
-  | grep "Energy (kcal/mol) -7.83714"
+  | grep "Energy (kcal/mol): -7.83714"
 popd
