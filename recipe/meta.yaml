@@ -1,16 +1,16 @@
 {% set name = "chimes-calculator" %}
-{% set version = "1.0.0" %}
+{% set version = "1.0.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/rk-lindsey/chimes_calculator/archive/refs/tags/v{{ version }}.zip
-  sha256: 367e84bcca6cf9901198d031fef3ccaea0e9fdd1600d58566c73fc9ec729dcae
+  url: https://github.com/rk-lindsey/chimes_calculator/archive/refs/tags/v.{{ version }}.zip
+  sha256: add9c3a6f31d4a70e990691082e7c5747da4b0b078e41c8998ec63b5e11a734a
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
 
 requirements:
