@@ -1,5 +1,5 @@
 {% set name = "chimes-calculator" %}
-{% set version = "1.0.2" %}
+{% set version = "2.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/rk-lindsey/chimes_calculator/archive/refs/tags/v.{{ version }}.zip
-  sha256: add9c3a6f31d4a70e990691082e7c5747da4b0b078e41c8998ec63b5e11a734a
+  sha256: 10ad40a11061086f6d7cfd5a0a0f984ca38c15bbb626989dfba9327360625e95
 
 build:
   number: 0
@@ -17,6 +17,7 @@ requirements:
   build:
     - {{ compiler('cxx') }}
     - {{ compiler('fortran') }}
+    - {{ stdlib("c") }}
     - cmake
     - ninja
 
